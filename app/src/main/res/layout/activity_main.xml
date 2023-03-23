@@ -1,23 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:layout_margin="20dp"
-    tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/btnDark"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:layout_marginBottom="10dp"
-        android:padding="10dp"
-        android:fontFamily="@string/appbar_scrolling_view_behavior"
-        android:text="Dark" />
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:id="@+id/LinearLayout"
+    tools:context=".MainActivity">
 
     <Button
         android:id="@+id/btnLight"
@@ -26,4 +17,25 @@
         android:layout_margin="10dp"
         android:padding="10dp"
         android:text="Light" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:src="@drawable/sex2"
+        android:visibility="gone"
+        android:id="@+id/sexyimage"
+        />
+
+    <Button
+        android:id="@+id/btnDark"
+        android:backgroundTint="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@string/appbar_scrolling_view_behavior"
+        android:padding="10dp"
+        android:text="Dark"
+        />
+
 </LinearLayout>
